@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+       
+        
+        <header >
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-main p-4">
+                <div class="container font2 pt-3">
+                  
+                  <a class="navbar-brand  text-white fs-6 " href="index.html">Weather <br>tagline goes here</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+                        <li class="nav-item ">
+                          <a class="nav-link active text-white homeline" aria-current="page" href="#">Home
+                            <div class="nav-line"> </div>
+                          </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">News
+                            <div class="nav-line"> </div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Live Cameras
+                            <div class="nav-line"> </div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Photos
+                            <div class="nav-line"> </div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="">Contact
+                              <div class="nav-line"> </div>
+                            </a>
+                          </li>
+                
+                      </ul>
+                     
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <section id="photo" class="h-50 p-1">
+            <div class="input mt-5 bg-main w-75 m-auto bg-main rounded-pill d-flex justify-content-lg-between ">
+                <input id="input-info"class="w-100  border-0 p-3 bg-main rounded-pill text-white"  placeholder="find Your Location..">
+                <button id="findBtn" class="float-end bg-info btn text-white rounded-pill px-4 py-3 mx-3 my-2">Find</button>
+                <div class="clearfix"></div>
+            </div>
+
+        </section>
+        <section id="info" class="bg-main">
+            <div class="container  ">
+                <div class=" justify-content-lg-center d-flex   position-absolute start-0 end-0 top-50 " >
+                    <div id="today" class="bg-sec text-white  w-25 rounded-start">
+                        <div class="today-info d-flex justify-content-between bg-dark bg-opacity-50 ">
+                            <div id="dayTxt"class="day-name">
+                               
+                            </div>
+                            <div class="day-date">
+                                <span id="dayNum"></span>
+                                <span id="month"></span>
+                            </div>
+                        </div>
+                        <div id="info-today"class="p-5">
+                         
+                            
+                        </div>
+                        <div class="footer p-5">
+                       
+    
+                        </div>
+    
+                    </div>
+                    <div id="tomorrow"class="text-white text-center bg-main w-25 ">
+                       
+                            <div class="  bg-dark bg-opacity-50   ">
+                                <div id="tomorrow-name">
+                                    
+                                </div>
+            
+                            </div>
+                            <div id="info-tomorrow" class=" p-5">
+                              
+                               
+                                
+                            </div>
+    
+                    </div>
+                    <div id="afterTomorrow" class=" text-white text-center bg-sec w-25 rounded-end">
+                      
+                            <div class="afterTomorrow-info bg-dark bg-opacity-50  ">
+                                <div id="afterTomorrow-name">
+                                 
+                                </div>
+                            </div>
+                            <div id="info-afterTomorrow" class=" p-5 ">
+                                <i></i>
+                              
+                               
+                                
+                            </div>
+    
+                    
+    
+                    </div>
+                </div>
+                <div class="background bg-main "></div>
+            </div>
+        
+        </section>
+       
+        <footer class="bg-sec p-5">
+            <div class="main d-flex justify-content-around">
+                <div class="input  bg-main w-50  bg-main rounded-pill d-flex justify-content-lg-between ">
+                    <input id="email-info"class="w-100  border-0 p-3 bg-main rounded-pill text-white"  placeholder="Enter Your Email to Subscribe..">
+                    <button id="emailBtn" class="float-end bg-info btn text-white rounded-pill px-4 py-3 mx-3 my-2">Subscribe</button>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="mt-2">
+                    <span>d</span>
+                    <span>d</span>
+                    <span>d</span>
+                    <span>d</span>
+                </div>
+                
+            </div>
+            <p class="text-center mt-5 text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+
+        </footer>
+        
+        
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
